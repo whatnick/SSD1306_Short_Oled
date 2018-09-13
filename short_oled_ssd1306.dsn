@@ -1,0 +1,240 @@
+(pcb C:\Users\Tisham\Documents\kicad\short_oled_ssd1306\short_oled_ssd1306.dsn
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "(2018-02-15 revision 29b28de31)-makepkg")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  199500 -131000  203000 -131000  203000 -146500  179500 -146500
+            179500 -131000  183000 -131000  183000 -127500  199500 -127500
+            199500 -131000)
+    )
+    (via "Via[0-1]_965.2:609.6_um")
+    (rule
+      (width 300)
+      (clearance 254.1)
+      (clearance 254.1 (type default_smd))
+      (clearance 63.5 (type smd_smd))
+    )
+  )
+  (placement
+    (component Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm
+      (place P1 195000 -129000 front 270 (PN n.a.))
+    )
+    (component olimex:C_0603
+      (place C6 197500 -134500 front 0 (PN 10uF))
+      (place C4 182000 -138500 front 180 (PN 100nF))
+      (place C2 197500 -136500 front 0 (PN 1uF))
+      (place R4 197500 -132500 front 0 (PN 330K))
+      (place R2 182000 -132500 front 0 (PN 10K))
+    )
+    (component olimex:C_0603::1
+      (place C5 182000 -136500 front 0 (PN 2.2uF))
+      (place C3 187500 -138500 front 180 (PN 1uF))
+      (place C1 197500 -138500 front 180 (PN 1uF))
+      (place R3 187500 -136500 front 180 (PN 10K))
+      (place R1 182000 -134500 front 0 (PN 10K))
+    )
+    (component "olimex:IROP055-SSD1306Z-PADS-ONLY"
+      (place OLEDM1 191150 -143816 front 180 (PN IROP055))
+    )
+    (component "OLIMEX_LOGOs-FP:LOGO_PBFREE"
+      (place REF** 191000 -133500 front 0 (PN LOGO_PBFREE))
+    )
+  )
+  (library
+    (image Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm
+      (outline (path signal 50  1800 1800  -1800 1800))
+      (outline (path signal 50  1800 -9400  1800 1800))
+      (outline (path signal 50  -1800 -9400  1800 -9400))
+      (outline (path signal 50  -1800 1800  -1800 -9400))
+      (outline (path signal 120  -1330 1330  0 1330))
+      (outline (path signal 120  -1330 0  -1330 1330))
+      (outline (path signal 120  1330 -1270  -1330 -1270))
+      (outline (path signal 120  1330 -8950  1330 -1270))
+      (outline (path signal 120  -1330 -8950  1330 -8950))
+      (outline (path signal 120  -1330 -1270  -1330 -8950))
+      (outline (path signal 100  1270 1270  -1270 1270))
+      (outline (path signal 100  1270 -8890  1270 1270))
+      (outline (path signal 100  -1270 -8890  1270 -8890))
+      (outline (path signal 100  -1270 1270  -1270 -8890))
+      (pin Oval[A]Pad_1700x1700_um 4 0 -7620)
+      (pin Oval[A]Pad_1700x1700_um 3 0 -5080)
+      (pin Oval[A]Pad_1700x1700_um 2 0 -2540)
+      (pin Rect[A]Pad_1700x1700_um 1 0 0)
+    )
+    (image olimex:C_0603
+      (outline (path signal 127  508 635  1524 635))
+      (outline (path signal 127  1524 635  1524 -635))
+      (outline (path signal 127  1524 -635  508 -635))
+      (outline (path signal 127  -1524 635  -1524 -635))
+      (outline (path signal 127  -1524 -635  -508 -635))
+      (outline (path signal 127  -1524 635  -508 635))
+      (pin Rect[T]Pad_1016x1016_um 1 -889 0)
+      (pin Rect[T]Pad_1016x1016_um 2 889 0)
+    )
+    (image olimex:C_0603::1
+      (outline (path signal 127  -1524 635  -508 635))
+      (outline (path signal 127  -1524 -635  -508 -635))
+      (outline (path signal 127  -1524 635  -1524 -635))
+      (outline (path signal 127  1524 -635  508 -635))
+      (outline (path signal 127  1524 635  1524 -635))
+      (outline (path signal 127  508 635  1524 635))
+      (pin Rect[T]Pad_1016x1016_um 2 889 0)
+      (pin Rect[T]Pad_1016x1016_um 1 -889 0)
+    )
+    (image "olimex:IROP055-SSD1306Z-PADS-ONLY"
+      (outline (path signal 127  -11000 0  -11000 2540))
+      (outline (path signal 127  11000 2540  11000 0))
+      (outline (path signal 127  -11000 0  -10600 0))
+      (outline (path signal 127  10900 0  10600 0))
+      (outline (path signal 127  -10922 2540  10922 2540))
+      (pin Rect[T]Pad_400x2540_um 15 -350 700)
+      (pin Rect[T]Pad_400x2540_um 14 -1050 700)
+      (pin Rect[T]Pad_400x2540_um 13 -1750 700)
+      (pin Rect[T]Pad_400x2540_um 12 -2450 700)
+      (pin Rect[T]Pad_400x2540_um 11 -3150 700)
+      (pin Rect[T]Pad_400x2540_um 10 -3850 700)
+      (pin Rect[T]Pad_400x2540_um 9 -4550 700)
+      (pin Rect[T]Pad_400x2540_um 8 -5250 700)
+      (pin Rect[T]Pad_400x2540_um 7 -5950 700)
+      (pin Rect[T]Pad_400x2540_um 6 -6650 700)
+      (pin Rect[T]Pad_400x2540_um 5 -7350 700)
+      (pin Rect[T]Pad_400x2540_um 4 -8050 700)
+      (pin Rect[T]Pad_400x2540_um 3 -8750 700)
+      (pin Rect[T]Pad_400x2540_um 2 -9450 700)
+      (pin Rect[T]Pad_400x2540_um 1 -10150 700)
+      (pin Rect[T]Pad_400x2540_um 30 10150 700)
+      (pin Rect[T]Pad_400x2540_um 29 9450 700)
+      (pin Rect[T]Pad_400x2540_um 28 8750 700)
+      (pin Rect[T]Pad_400x2540_um 27 8050 700)
+      (pin Rect[T]Pad_400x2540_um 26 7350 700)
+      (pin Rect[T]Pad_400x2540_um 25 6650 700)
+      (pin Rect[T]Pad_400x2540_um 24 5950 700)
+      (pin Rect[T]Pad_400x2540_um 23 5250 700)
+      (pin Rect[T]Pad_400x2540_um 22 4550 700)
+      (pin Rect[T]Pad_400x2540_um 21 3850 700)
+      (pin Rect[T]Pad_400x2540_um 20 3150 700)
+      (pin Rect[T]Pad_400x2540_um 19 2450 700)
+      (pin Rect[T]Pad_400x2540_um 18 1750 700)
+      (pin Rect[T]Pad_400x2540_um 17 1050 700)
+      (pin Rect[T]Pad_400x2540_um 16 350 700)
+    )
+    (image "OLIMEX_LOGOs-FP:LOGO_PBFREE"
+      (outline (path signal 200  -1363.98 1478.28  1069.34 -942.34))
+      (outline (path signal 254  1599.04 314.96  1571.66 2.005  1490.35 -301.441  1357.58 -586.158
+            1177.39 -843.496  955.256 -1065.63  697.918 -1245.82  413.201 -1378.59
+            109.755 -1459.9  -203.2 -1487.28  -516.155 -1459.9  -819.601 -1378.59
+            -1104.32 -1245.82  -1361.66 -1065.63  -1583.79 -843.496  -1763.98 -586.158
+            -1896.75 -301.441  -1978.06 2.005  -2005.44 314.96  -1978.06 627.915
+            -1896.75 931.361  -1763.98 1216.08  -1583.79 1473.42  -1361.66 1695.55
+            -1104.32 1875.74  -819.601 2008.51  -516.155 2089.82  -203.2 2117.2
+            109.755 2089.82  413.201 2008.51  697.918 1875.74  955.256 1695.55
+            1177.39 1473.42  1357.58 1216.08  1490.35 931.361  1571.66 627.915
+            1599.04 314.96))
+    )
+    (padstack Oval[A]Pad_1700x1700_um
+      (shape (path F.Cu 1700  0 0  0 0))
+      (shape (path B.Cu 1700  0 0  0 0))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_400x2540_um
+      (shape (rect F.Cu -200 -1270 200 1270))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1016x1016_um
+      (shape (rect F.Cu -508 -508 508 508))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1700x1700_um
+      (shape (rect F.Cu -850 -850 850 850))
+      (shape (rect B.Cu -850 -850 850 850))
+      (attach off)
+    )
+    (padstack "Via[0-1]_965.2:609.6_um"
+      (shape (circle F.Cu 965.2))
+      (shape (circle B.Cu 965.2))
+      (attach off)
+    )
+  )
+  (network
+    (net "Net-(C1-Pad1)"
+      (pins C1-1 OLEDM1-2)
+    )
+    (net "Net-(C1-Pad2)"
+      (pins C1-2 OLEDM1-3)
+    )
+    (net "Net-(C2-Pad1)"
+      (pins C2-1 OLEDM1-4)
+    )
+    (net "Net-(C2-Pad2)"
+      (pins C2-2 OLEDM1-5)
+    )
+    (net GND
+      (pins P1-3 C6-2 C5-2 C4-1 C3-2 OLEDM1-15 OLEDM1-13 OLEDM1-12 OLEDM1-10 OLEDM1-8
+        OLEDM1-29 OLEDM1-25 OLEDM1-24 OLEDM1-23 OLEDM1-22 OLEDM1-21 OLEDM1-17 OLEDM1-16
+        R4-2)
+    )
+    (net "Net-(C5-Pad1)"
+      (pins C5-1 OLEDM1-28)
+    )
+    (net /SCL
+      (pins P1-2 OLEDM1-18 R3-2)
+    )
+    (net /SDA
+      (pins P1-1 OLEDM1-20 OLEDM1-19 R2-2)
+    )
+    (net "Net-(OLEDM1-Pad26)"
+      (pins OLEDM1-26 R4-1)
+    )
+    (net "Net-(OLEDM1-Pad30)"
+      (pins OLEDM1-30)
+    )
+    (net "Net-(OLEDM1-Pad1)"
+      (pins OLEDM1-1)
+    )
+    (net /VDD
+      (pins P1-4 C3-1 OLEDM1-11 OLEDM1-9 OLEDM1-6 R3-1 R2-1 R1-1)
+    )
+    (net "Net-(OLEDM1-Pad7)"
+      (pins OLEDM1-7)
+    )
+    (net "Net-(C4-Pad2)"
+      (pins C4-2 OLEDM1-14 R1-2)
+    )
+    (net "Net-(C6-Pad1)"
+      (pins C6-1 OLEDM1-27)
+    )
+    (class kicad_default "" /SCL /SDA /VDD GND "Net-(C1-Pad1)" "Net-(C1-Pad2)"
+      "Net-(C2-Pad1)" "Net-(C2-Pad2)" "Net-(C4-Pad1)" "Net-(C4-Pad2)" "Net-(C5-Pad1)"
+      "Net-(C6-Pad1)" "Net-(C6-Pad2)" "Net-(OLEDM1-Pad1)" "Net-(OLEDM1-Pad26)"
+      "Net-(OLEDM1-Pad30)" "Net-(OLEDM1-Pad7)" "Net-(UEXT1-Pad10)" "Net-(UEXT1-Pad3)"
+      "Net-(UEXT1-Pad4)" "Net-(UEXT1-Pad7)" "Net-(UEXT1-Pad8)" "Net-(UEXT1-Pad9)"
+      (circuit
+        (use_via Via[0-1]_965.2:609.6_um)
+      )
+      (rule
+        (width 300)
+        (clearance 254.1)
+      )
+    )
+  )
+  (wiring
+  )
+)

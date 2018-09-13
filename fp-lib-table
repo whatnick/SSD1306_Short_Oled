@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name olimex)(type KiCad)(uri "$(KIPRJMOD)/olimex.pretty")(options "")(descr ""))
+)

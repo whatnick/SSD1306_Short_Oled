@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name short_oled_ssd1306-rescue)(type Legacy)(uri ${KIPRJMOD}/short_oled_ssd1306-rescue.lib)(options "")(descr ""))
+)
